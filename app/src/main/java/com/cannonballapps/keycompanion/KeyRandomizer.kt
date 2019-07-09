@@ -1,6 +1,6 @@
 package com.cannonballapps.keycompanion
 
-class MainModel {
+class KeyRandomizer {
     companion object {
         val numNotes = 12
         val notesFlat = arrayOf("C", "D𝄬", "D", "E𝄬", "E", "F", "G𝄬", "G", "A𝄬", "A", "B𝄬", "B")
