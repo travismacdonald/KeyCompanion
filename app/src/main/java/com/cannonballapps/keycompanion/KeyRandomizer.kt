@@ -13,7 +13,7 @@ class KeyRandomizer {
         return curKeyList[ix]
     }
 
-    fun shuffleCurNoteList() {
+    fun shuffleKeyList() {
         curKeyList.shuffle()
     }
 
@@ -36,7 +36,7 @@ class KeyRandomizer {
 
     private fun constructKeyList() : MutableList<Key> {
         val keyList = mutableListOf<Key>()
-        for (i in 0..NUM_NOTES) {
+        for (i in 0 until NUM_NOTES) {
             val curKey = Key(notesFlat[i], notesSharp[i])
             keyList.add(curKey)
         }
