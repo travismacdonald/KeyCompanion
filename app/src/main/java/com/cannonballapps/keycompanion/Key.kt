@@ -8,8 +8,6 @@ class Key(nameFlat: String, nameSharp: String) {
     var curName = nameArr[nameIx]
         private set
 
-
-    // change name
     fun toggleName() {
         nameIx = (nameIx + 1) % nameArr.size
         curName = nameArr[nameIx]
