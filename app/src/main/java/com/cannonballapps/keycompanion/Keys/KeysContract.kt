@@ -1,8 +1,13 @@
-package com.cannonballapps.keycompanion
+package com.cannonballapps.keycompanion.Keys
+
+import com.cannonballapps.keycompanion.BasePresenter
+import com.cannonballapps.keycompanion.BaseView
+import com.cannonballapps.keycompanion.Key
 
 interface KeysContract {
 
-    interface View : BaseView<Presenter> {
+    interface View :
+        BaseView<Presenter> {
 
         fun showAllKeys(keyList: MutableList<Key>)
 
