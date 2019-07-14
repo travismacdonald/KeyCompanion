@@ -1,6 +1,6 @@
 package com.cannonballapps.keycompanion
 
-class KeyRandomizer {
+class KeyRandomizer : KeysDataSource {
     companion object {
         /**
          * Total number of keys.
@@ -26,28 +26,28 @@ class KeyRandomizer {
     /**
      * Get key matching index given.
      */
-    fun getKey(ix: Int) : Key {
+    override fun getKey(ix: Int) : Key {
         return curKeyList[ix]
     }
 
     /**
      * Randomizes order of key list.
      */
-    fun shuffleKeyList() {
+    override fun randomizeKeyOrder() {
         curKeyList.shuffle()
     }
 
     /**
      * Calls keys toggle method.
      */
-    fun toggleKeySpelling(toToggle: Key) {
-        toToggle.toggleName()
+    override fun toggleKeyName(toChange: Key) {
+        toChange.toggleName()
     }
 
     /**
      * Sets all keys spelling to flat.
      */
-    fun setAllSpellingFlat() {
+    override fun setAllNamesFlat() {
         for (key in curKeyList) {
             key.setNameFlat()
         }
@@ -56,7 +56,7 @@ class KeyRandomizer {
     /**
      * Sets all keys spelling to sharp.
      */
-    fun setAllSpellingSharp() {
+    override fun setAllNamesSharp() {
         for (key in curKeyList) {
             key.setNameSharp()
         }

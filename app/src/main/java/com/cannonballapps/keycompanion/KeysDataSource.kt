@@ -4,12 +4,12 @@ interface KeysDataSource {
 
     fun getKey(ix: Int) : Key
 
-    fun randomizeKeys()
+    fun randomizeKeyOrder()
 
-    fun toggleKeySpelling(ix: Int)
+    fun toggleKeyName(toChange: Key)
 
-    fun setAllSpellingFlat()
+    fun setAllNamesFlat()
 
-    fun setAllSpellingSharp()
+    fun setAllNamesSharp()
 
 }
