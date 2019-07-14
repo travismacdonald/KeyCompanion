@@ -21,6 +21,7 @@ private const val ARG_PARAM2 = "param2"
  */
 class KeysFragment : Fragment(), KeysContract.View {
 
+    // Will call presenter methods through this var.
     override lateinit var presenter: KeysContract.Presenter
 
     override fun showKey(toShow: Key) {

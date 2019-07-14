@@ -21,7 +21,7 @@ class KeyRandomizerTest {
     @Test
     fun changeNamesToSharp() {
         val keyRandomizer = KeyRandomizer()
-        keyRandomizer.setAllSharp()
+        keyRandomizer.setAllSpellingSharp()
         for (i in 0 until 12) {
             assertEquals(KeyRandomizer.notesSharp[i], keyRandomizer.getKey(i).curName)
         }
