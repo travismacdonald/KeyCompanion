@@ -1,4 +1,4 @@
-package com.cannonballapps.keycompanion.Keys
+package com.cannonballapps.keycompanion.keys
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

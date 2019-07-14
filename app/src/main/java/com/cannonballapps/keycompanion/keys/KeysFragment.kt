@@ -1,4 +1,4 @@
-package com.cannonballapps.keycompanion.Keys
+package com.cannonballapps.keycompanion.keys
 
 
 import android.os.Bundle
