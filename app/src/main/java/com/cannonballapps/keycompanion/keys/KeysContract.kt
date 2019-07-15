@@ -8,12 +8,9 @@ interface KeysContract {
 
     interface View : BaseView<Presenter> {
 
-        // Update all the
         fun showAllKeys(keyList: MutableList<Key>)
 
         fun showKey(toShow: Key)
-
-
 
     }
 

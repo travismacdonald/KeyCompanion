@@ -10,11 +10,6 @@ import com.cannonballapps.keycompanion.Key
 
 import com.cannonballapps.keycompanion.R
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
 /**
  * A simple [Fragment] subclass.
  *
@@ -32,12 +27,22 @@ class KeysFragment : Fragment(), KeysContract.View {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_keys, container, false)
+    override fun onResume() {
+        super.onResume()
+        presenter.start() // TODO: not implemented yet
     }
 
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
+        val root = inflater.inflate(R.layout.keys_frag, container, false)
+
+        return root
+    }
+
+    companion object {
+
+        fun newInstance() = KeysFragment()
+    }
 
 }

@@ -5,17 +5,17 @@ class KeyRandomizer : KeysDataSource {
         /**
          * Total number of keys.
          */
-        const val NUM_NOTES = 12
+        const val NUM_KEYS = 12
 
         /**
          * Flat spelling of key names.
          */
-        val notesFlat = arrayOf("C", "D𝄬", "D", "E𝄬", "E", "F", "G𝄬", "G", "A𝄬", "A", "B𝄬", "B")
+        val keysFlat = arrayOf("C", "D𝄬", "D", "E𝄬", "E", "F", "G𝄬", "G", "A𝄬", "A", "B𝄬", "B")
 
         /**
          * Sharp spelling of key names.
          */
-        val notesSharp = arrayOf("C", "C𝄰", "D", "D𝄰", "E", "F", "F𝄰", "G", "G𝄰", "A", "A𝄰", "B")
+        val keysSharp = arrayOf("C", "C𝄰", "D", "D𝄰", "E", "F", "F𝄰", "G", "G𝄰", "A", "A𝄰", "B")
     }
 
     /**
@@ -68,8 +68,8 @@ class KeyRandomizer : KeysDataSource {
      */
     private fun constructKeyList() : MutableList<Key> {
         val keyList = mutableListOf<Key>()
-        for (i in 0 until NUM_NOTES) {
-            val curKey = Key(notesFlat[i], notesSharp[i])
+        for (i in 0 until NUM_KEYS) {
+            val curKey = Key(keysFlat[i], keysSharp[i])
             keyList.add(curKey)
         }
         return keyList
