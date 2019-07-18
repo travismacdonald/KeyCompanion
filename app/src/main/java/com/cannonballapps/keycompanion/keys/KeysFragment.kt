@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import com.cannonballapps.keycompanion.Key
 
@@ -22,6 +23,7 @@ class KeysFragment : Fragment(), KeysContract.View {
     override lateinit var presenter: KeysContract.Presenter
 
     private lateinit var keysStr: TextView
+    private lateinit var randomizeButton: Button
 
     // Todo: probably delete this function
     override fun showKey(toShow: Key) {
@@ -45,6 +47,8 @@ class KeysFragment : Fragment(), KeysContract.View {
         val root = inflater.inflate(R.layout.keys_frag, container, false)
         with (root) {
             keysStr = findViewById(R.id.keys_text)
+            randomizeButton = findViewById(R.id.randomize_button)
+            randomizeButton.setOnClickListener { presenter.randomizeKeys() }
         }
         return root
     }
