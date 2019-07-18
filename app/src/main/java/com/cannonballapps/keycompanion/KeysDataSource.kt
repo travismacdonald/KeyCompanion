@@ -2,6 +2,8 @@ package com.cannonballapps.keycompanion
 
 interface KeysDataSource {
 
+    fun getKeys(): MutableList<Key>
+
     fun getKey(ix: Int) : Key
 
     fun randomizeKeyOrder()

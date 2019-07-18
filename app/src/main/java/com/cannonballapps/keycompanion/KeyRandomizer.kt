@@ -23,6 +23,10 @@ class KeyRandomizer : KeysDataSource {
      */
     private var curKeyList = constructKeyList()
 
+    override fun getKeys() : MutableList<Key> {
+        return curKeyList
+    }
+
     /**
      * Get key matching index given.
      */

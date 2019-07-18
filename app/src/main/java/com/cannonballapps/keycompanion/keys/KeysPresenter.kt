@@ -1,29 +1,40 @@
 package com.cannonballapps.keycompanion.keys
 
 import com.cannonballapps.keycompanion.Key
+import com.cannonballapps.keycompanion.KeysDataSource
 
-interface KeysPresenter : KeysContract.Presenter {
+class KeysPresenter(
+    val keysDataSource: KeysDataSource,
+    val keysView: KeysContract.View
+) : KeysContract.Presenter {
 
     // Todo: reference to KeyRandomizer
     // Todo: reference to KeysFragment
 
+    init {
+        keysView.presenter = this
+    }
+
     override fun start() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        randomizeKeys()
     }
 
     override fun changeKeySpelling(toChange: Key) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        keysDataSource.toggleKeyName(toChange)
+        keysView.showKey(toChange)
     }
 
     override fun randomizeKeys() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        keysDataSource.randomizeKeyOrder()
+        keysView.showAllKeys(keysDataSource.getKeys())
     }
 
     override fun setAllKeysFlat() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        keysDataSource.setAllNamesFlat()
+        keysView.showAllKeys(keysDataSource.getKeys())
     }
 
     override fun setAllKeysSharp() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+        keysDataSource.setAllNamesSharp()
+        keysView.showAllKeys(keysDataSource.getKeys())    }
 }

@@ -53,4 +53,8 @@ class Key(nameFlat: String, nameSharp: String) {
             curName = nameArr[1]
         }
     }
+
+    override fun toString(): String {
+        return curName
+    }
 }
