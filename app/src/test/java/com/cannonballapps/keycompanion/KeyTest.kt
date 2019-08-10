@@ -14,32 +14,32 @@ class KeyTest {
     @Test
     fun testSameSpelling() {
         val key = Key("C", "C")
-        assertEquals("C", key.curName)
+        assertEquals("C", key.name)
 
         key.setNameSharp()
-        assertEquals("C", key.curName)
+        assertEquals("C", key.name)
 
         key.setNameFlat()
-        assertEquals("C", key.curName)
+        assertEquals("C", key.name)
 
         key.toggleName()
-        assertEquals("C", key.curName)
+        assertEquals("C", key.name)
     }
 
     // 'C#' <-> 'Db'
     @Test
     fun testDifferentSpelling() {
         val key = Key("D𝄬", "C𝄰")
-        assertEquals("D𝄬", key.curName)
+        assertEquals("D𝄬", key.name)
 
         key.toggleName()
-        assertEquals("C𝄰", key.curName)
+        assertEquals("C𝄰", key.name)
 
         key.setNameFlat()
-        assertEquals("D𝄬", key.curName)
+        assertEquals("D𝄬", key.name)
 
         key.setNameSharp()
-        assertEquals("C𝄰", key.curName)
+        assertEquals("C𝄰", key.name)
     }
 
 }

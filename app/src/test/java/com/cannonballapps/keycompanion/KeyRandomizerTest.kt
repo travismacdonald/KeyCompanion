@@ -14,7 +14,7 @@ class KeyRandomizerTest {
     fun namesShouldDefaultFlat() {
         val keyRandomizer = KeyRandomizer()
         for (i in 0 until 12) {
-            assertEquals(KeyRandomizer.keysFlat[i], keyRandomizer.getKey(i).curName)
+            assertEquals(KeyRandomizer.keysFlat[i], keyRandomizer.getKey(i).name)
         }
     }
 
@@ -23,7 +23,7 @@ class KeyRandomizerTest {
         val keyRandomizer = KeyRandomizer()
         keyRandomizer.setAllNamesSharp()
         for (i in 0 until 12) {
-            assertEquals(KeyRandomizer.keysSharp[i], keyRandomizer.getKey(i).curName)
+            assertEquals(KeyRandomizer.keysSharp[i], keyRandomizer.getKey(i).name)
         }
     }
 
@@ -35,7 +35,7 @@ class KeyRandomizerTest {
 
         // Shouldn't flag since keys are in same order.
         for (i in 0 until 12) {
-            if (regularKr.getKey(i).curName != shuffledKr.getKey(i).curName) {
+            if (regularKr.getKey(i).name != shuffledKr.getKey(i).name) {
                 different = true
             }
         }
@@ -44,7 +44,7 @@ class KeyRandomizerTest {
         // Should flag (fingers crossed) since keys have been shuffled.
         shuffledKr.randomizeKeyOrder()
         for (i in 0 until 12) {
-            if (regularKr.getKey(i).curName != shuffledKr.getKey(i).curName) {
+            if (regularKr.getKey(i).name != shuffledKr.getKey(i).name) {
                 different = true
             }
         }
