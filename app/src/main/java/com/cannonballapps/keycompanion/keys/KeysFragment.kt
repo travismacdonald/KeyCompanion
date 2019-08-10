@@ -2,11 +2,13 @@ package com.cannonballapps.keycompanion.keys
 
 import android.os.Bundle
 import android.support.constraint.ConstraintLayout
+import android.support.design.widget.FloatingActionButton
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.LinearLayout
 import com.cannonballapps.keycompanion.Key
 import com.cannonballapps.keycompanion.KeyData
 
@@ -18,7 +20,7 @@ class KeysFragment : Fragment(), KeysContract.View {
 
     private lateinit var keysGrid: ConstraintLayout
 
-    private lateinit var randomizeButton: Button
+    private lateinit var randomizeButton: LinearLayout
 
     override lateinit var presenter: KeysContract.Presenter
 

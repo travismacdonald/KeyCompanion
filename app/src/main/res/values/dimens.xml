@@ -7,4 +7,9 @@
     <!-- Height of Key grid -->
     <dimen name="key_layout_height">400dp</dimen>
 
+    <!-- Function Buttons -->
+    <dimen name="function_border">3dp</dimen>
+    <dimen name="function_size">42dp</dimen>
+    <dimen name="function_spacing">40dp</dimen>
+
 </resources>
