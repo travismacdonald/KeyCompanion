@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Key Button Size -->
+    <dimen name="key_button_dims">60dp</dimen>
+
+    <!-- Height of Key grid -->
+    <dimen name="key_layout_height">400dp</dimen>
+
+</resources>
