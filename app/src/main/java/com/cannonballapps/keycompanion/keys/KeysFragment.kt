@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.LinearLayout
 import com.cannonballapps.keycompanion.Key
 import com.cannonballapps.keycompanion.KeyData
@@ -19,11 +18,11 @@ class KeysFragment : androidx.fragment.app.Fragment(), KeysContract.View {
 
     private lateinit var keysGrid: ConstraintLayout
 
-    private lateinit var randomizeButton: LinearLayout
+    private lateinit var randomizeButton: ExtendedFloatingActionButton
 
-    private lateinit var sharpButton: LinearLayout
+    private lateinit var sharpButton: ExtendedFloatingActionButton
 
-    private lateinit var flatButton: LinearLayout
+    private lateinit var flatButton: ExtendedFloatingActionButton
 
     override lateinit var presenter: KeysContract.Presenter
 
@@ -61,13 +60,13 @@ class KeysFragment : androidx.fragment.app.Fragment(), KeysContract.View {
         with (root) {
             // Setup Buttons
 
-            randomizeButton = findViewById(R.id.randomize_button)
+            randomizeButton = (findViewById<LinearLayout>(R.id.randomize_button)).getChildAt(0) as ExtendedFloatingActionButton
             randomizeButton.setOnClickListener { presenter.randomizeKeys() }
 
-            flatButton = findViewById(R.id.flat_button)
+            flatButton = (findViewById<LinearLayout>(R.id.flat_button)).getChildAt(0) as ExtendedFloatingActionButton
             flatButton.setOnClickListener { presenter.setAllKeysFlat() }
 
-            sharpButton = findViewById(R.id.sharp_button)
+            sharpButton = (findViewById<LinearLayout>(R.id.sharp_button)).getChildAt(0) as ExtendedFloatingActionButton
             sharpButton.setOnClickListener { presenter.setAllKeysSharp() }
         }
 
