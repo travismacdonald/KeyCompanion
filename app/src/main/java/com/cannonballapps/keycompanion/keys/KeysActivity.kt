@@ -10,7 +10,6 @@ class KeysActivity : AppCompatActivity() {
 
     private lateinit var keysPresenter: KeysPresenter
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.keys_activity)
@@ -23,11 +22,5 @@ class KeysActivity : AppCompatActivity() {
         transaction.add(R.id.contentFrame, keysFragment).commit()
 
         keysPresenter = KeysPresenter(KeysDataSourceImpl(), KeyHandlerImpl(), keysFragment)
-
-//        // Todo: borken
-//        supportFragmentManager
-//            .beginTransaction()
-//            .add(R.id.contentFrame, KeysFragment.newInstance())
-//            .commit()
     }
 }

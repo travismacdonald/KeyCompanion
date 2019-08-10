@@ -23,17 +23,4 @@ class KeyHandlerImpl : KeyHandler {
             key.setNameSharp()
         }
     }
-
-//    /**
-//     * Inflates key list with 12 key objects (ordered).
-//     * Default spelling is flat.
-//     */
-//    private fun constructKeyList() : MutableList<Key> {
-//        val keyList = mutableListOf<Key>()
-//        for (i in 0 until NUM_KEYS) {
-//            val curKey = Key(keysFlat[i], keysSharp[i])
-//            keyList.add(curKey)
-//        }
-//        return keyList
-//    }
 }

@@ -12,10 +12,6 @@ import com.cannonballapps.keycompanion.KeyData
 
 import com.cannonballapps.keycompanion.R
 
-/**
- * A simple [Fragment] subclass.
- *
- */
 class KeysFragment : Fragment(), KeysContract.View {
 
     private lateinit var keysGridContainer: ConstraintLayout
@@ -27,7 +23,7 @@ class KeysFragment : Fragment(), KeysContract.View {
     override lateinit var presenter: KeysContract.Presenter
 
     // Key Buttons ordered by key index.
-    private var keyButtons = arrayOfNulls<Button>(KeyData.NUM_KEYS)
+    private var keyButtons = arrayOfNulls<Button>(KeyData.NAMES_FLAT.size)
 
     // Todo: probably delete this function
     override fun showKey(toShow: Key) {
