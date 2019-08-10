@@ -24,5 +24,7 @@ interface KeysContract {
 
         fun changeKeySpelling(toChange: Key)
 
+        fun finish()
+
     }
 }

@@ -1,6 +1,5 @@
 package com.cannonballapps.keycompanion.keys
 
-
 import android.os.Bundle
 import android.support.constraint.ConstraintLayout
 import android.support.v4.app.Fragment
@@ -9,8 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import com.cannonballapps.keycompanion.Key
+import com.cannonballapps.keycompanion.KeyData
 
-import java.lang.StringBuilder
 import com.cannonballapps.keycompanion.R
 
 /**
@@ -20,20 +19,29 @@ import com.cannonballapps.keycompanion.R
 class KeysFragment : Fragment(), KeysContract.View {
 
     private lateinit var keysGridContainer: ConstraintLayout
-    // Will call presenter methods through this var.
-    override lateinit var presenter: KeysContract.Presenter
 
     private lateinit var keysGrid: ConstraintLayout
+
     private lateinit var randomizeButton: Button
+
+    override lateinit var presenter: KeysContract.Presenter
+
+    // Key Buttons ordered by key index.
+    private var keyButtons = arrayOfNulls<Button>(KeyData.NUM_KEYS)
 
     // Todo: probably delete this function
     override fun showKey(toShow: Key) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        keyButtons[toShow.ix]?.text = toShow.name
     }
 
     override fun showAllKeys(keyList: MutableList<Key>) {
-        val sb = StringBuilder()
-        for (key in keyList) sb.append("${key.curName} ")
+        for (childIx in 0 until keysGrid.childCount) {
+            val curButton = (keysGrid.getChildAt(childIx) as Button)
+            curButton.text = keyList[childIx].name
+            curButton.tag = keyList[childIx]
+            curButton.setOnClickListener { presenter.changeKeySpelling(curButton.tag as Key) }
+            keyButtons[keyList[childIx].ix] = curButton
+        }
     }
 
     override fun onResume() {
