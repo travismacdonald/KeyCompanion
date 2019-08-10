@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import com.cannonballapps.keycompanion.Key
+import com.cannonballapps.keycompanion.KeyData
 
 import com.cannonballapps.keycompanion.R
 
@@ -18,29 +19,28 @@ import com.cannonballapps.keycompanion.R
 class KeysFragment : Fragment(), KeysContract.View {
 
     private lateinit var keysGridContainer: ConstraintLayout
-    // Will call presenter methods through this var.
-    override lateinit var presenter: KeysContract.Presenter
 
     private lateinit var keysGrid: ConstraintLayout
+
     private lateinit var randomizeButton: Button
 
-    // Key Buttons ordered based on index.
-    private var keyButtons = arrayOfNulls<Button>(keysGrid.childCount)
+    override lateinit var presenter: KeysContract.Presenter
+
+    // Key Buttons ordered by key index.
+    private var keyButtons = arrayOfNulls<Button>(KeyData.NUM_KEYS)
 
     // Todo: probably delete this function
     override fun showKey(toShow: Key) {
-//        for (childNum in 0 until keysGrid.childCount) {
-//            if (keysGrid.getChildAt(childNum).getTag())
-//        }
+        keyButtons[toShow.ix]?.text = toShow.name
     }
 
     override fun showAllKeys(keyList: MutableList<Key>) {
-        for (childNum in 0 until keysGrid.childCount) {
-            val curButton = (keysGrid.getChildAt(childNum) as Button)
-            curButton.text = keyList[childNum].name
-            curButton.tag = keyList[childNum]
+        for (childIx in 0 until keysGrid.childCount) {
+            val curButton = (keysGrid.getChildAt(childIx) as Button)
+            curButton.text = keyList[childIx].name
+            curButton.tag = keyList[childIx]
             curButton.setOnClickListener { presenter.changeKeySpelling(curButton.tag as Key) }
-
+            keyButtons[keyList[childIx].ix] = curButton
         }
     }
 
@@ -62,15 +62,7 @@ class KeysFragment : Fragment(), KeysContract.View {
             randomizeButton.setOnClickListener { presenter.randomizeKeys() }
         }
 
-        setupKeyButtons()
-
         return root
-    }
-
-    private fun setupKeyButtons() {
-        for (childIx in 0 until keysGrid.childCount) {
-            keyButtons[childIx] = keysGrid.getChildAt()
-        }
     }
 
     companion object {
