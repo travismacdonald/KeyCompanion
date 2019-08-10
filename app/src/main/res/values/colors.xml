@@ -6,4 +6,7 @@
 
     <!-- Screen and Button background -->
     <color name="mainBackground">#000000</color>
+
+    <!-- Key Button -->
+    <color name="keybutton_textcolor">#FFFFFF</color>
 </resources>
