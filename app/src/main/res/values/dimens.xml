@@ -2,4 +2,5 @@
 <resources>
     <dimen name="key_button_dims">30dp</dimen>
     <dimen name="key_layout_height">400dp</dimen>
+    <dimen name="key_spacing">24dp</dimen>
 </resources>
