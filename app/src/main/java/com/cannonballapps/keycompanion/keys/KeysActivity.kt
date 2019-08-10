@@ -2,11 +2,7 @@ package com.cannonballapps.keycompanion.keys
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.annotation.IdRes
-import android.support.v4.app.Fragment
-import android.text.TextUtils.replace
-import com.cannonballapps.keycompanion.KeyRandomizer
-import com.cannonballapps.keycompanion.KeysDataSource
+import com.cannonballapps.keycompanion.models.keyhandler.KeyHandlerImpl
 import com.cannonballapps.keycompanion.R
 
 class KeysActivity : AppCompatActivity() {
@@ -25,7 +21,7 @@ class KeysActivity : AppCompatActivity() {
         val transaction = supportFragmentManager.beginTransaction()
         transaction.add(R.id.contentFrame, keysFragment).commit()
 
-        keysPresenter = KeysPresenter(KeyRandomizer(), keysFragment)
+        keysPresenter = KeysPresenter(KeyHandlerImpl(), keysFragment)
 
 //        // Todo: borken
 //        supportFragmentManager

@@ -1,5 +1,6 @@
 package com.cannonballapps.keycompanion
 
+import com.cannonballapps.keycompanion.models.keyhandler.KeyHandlerImpl
 import org.junit.Assert.*
 import org.junit.Test
 
@@ -12,26 +13,26 @@ class KeyRandomizerTest {
 
     @Test
     fun namesShouldDefaultFlat() {
-        val keyRandomizer = KeyRandomizer()
+        val keyRandomizer = KeyHandlerImpl()
         for (i in 0 until 12) {
-            assertEquals(KeyRandomizer.keysFlat[i], keyRandomizer.getKey(i).name)
+            assertEquals(KeyHandlerImpl.keysFlat[i], keyRandomizer.getKey(i).name)
         }
     }
 
     @Test
     fun changeNamesToSharp() {
-        val keyRandomizer = KeyRandomizer()
+        val keyRandomizer = KeyHandlerImpl()
         keyRandomizer.setAllNamesSharp()
         for (i in 0 until 12) {
-            assertEquals(KeyRandomizer.keysSharp[i], keyRandomizer.getKey(i).name)
+            assertEquals(KeyHandlerImpl.keysSharp[i], keyRandomizer.getKey(i).name)
         }
     }
 
     @Test
     fun shuffleKeyList() {
         var different = false
-        val regularKr = KeyRandomizer()
-        val shuffledKr = KeyRandomizer()
+        val regularKr = KeyHandlerImpl()
+        val shuffledKr = KeyHandlerImpl()
 
         // Shouldn't flag since keys are in same order.
         for (i in 0 until 12) {
@@ -42,7 +43,7 @@ class KeyRandomizerTest {
         assertEquals(false, different)
 
         // Should flag (fingers crossed) since keys have been shuffled.
-        shuffledKr.randomizeKeyOrder()
+        shuffledKr.randomizeKeys()
         for (i in 0 until 12) {
             if (regularKr.getKey(i).name != shuffledKr.getKey(i).name) {
                 different = true
