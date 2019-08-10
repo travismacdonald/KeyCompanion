@@ -9,7 +9,13 @@
 
     <!-- Function Buttons -->
     <dimen name="function_border">3dp</dimen>
-    <dimen name="function_size">42dp</dimen>
+    <dimen name="function_size">2dp</dimen>
+    <dimen name="function_iconsize">16dp</dimen>
     <dimen name="function_spacing">40dp</dimen>
+
+    <!-- Key Buttons -->
+    <dimen name="keybutton_border">3dp</dimen>
+    <dimen name="keybutton_size">56dp</dimen>
+    <dimen name="keybutton_textsize">24sp</dimen>
 
 </resources>

@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/key_layout_height">
 
     <!-- Row 1 -->
 
-    <Button
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/r1c1"
-        android:layout_width="@dimen/key_button_dims"
-        android:layout_height="@dimen/key_button_dims"
+        android:layout_width="@dimen/keybutton_size"
+        android:layout_height="@dimen/keybutton_size"
         android:text="Fuck you android studio"
+        android:textAlignment="center"
+
+        android:textColor="@color/keybutton_textcolor"
+        android:textSize="@dimen/keybutton_textsize"
         app:layout_constraintBottom_toTopOf="@+id/r2c1"
         app:layout_constraintEnd_toStartOf="@+id/r1c2"
         app:layout_constraintHorizontal_bias="0.5"
@@ -19,11 +23,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread" />
 
-    <Button
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/r1c2"
-        android:layout_width="@dimen/key_button_dims"
-        android:layout_height="@dimen/key_button_dims"
+        android:layout_width="@dimen/keybutton_size"
+        android:layout_height="@dimen/keybutton_size"
         android:text="Fuck you android studio"
+        android:textAlignment="center"
+        android:textColor="@color/keybutton_textcolor"
+        android:textSize="@dimen/keybutton_textsize"
         app:layout_constraintBottom_toTopOf="@+id/r2c2"
         app:layout_constraintEnd_toStartOf="@+id/row1c3"
         app:layout_constraintHorizontal_bias="0.5"
@@ -32,11 +39,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread" />
 
-    <Button
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/row1c3"
-        android:layout_width="@dimen/key_button_dims"
-        android:layout_height="@dimen/key_button_dims"
+        android:layout_width="@dimen/keybutton_size"
+        android:layout_height="@dimen/keybutton_size"
         android:text="Fuck you android studio"
+        android:textAlignment="center"
+        android:textColor="@color/keybutton_textcolor"
+        android:textSize="@dimen/keybutton_textsize"
         app:layout_constraintBottom_toTopOf="@+id/r2c3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -47,11 +57,14 @@
 
     <!-- Row 2 -->
 
-    <Button
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/r2c1"
-        android:layout_width="@dimen/key_button_dims"
-        android:layout_height="@dimen/key_button_dims"
+        android:layout_width="@dimen/keybutton_size"
+        android:layout_height="@dimen/keybutton_size"
         android:text="Fuck you android studio"
+        android:textAlignment="center"
+        android:textColor="@color/keybutton_textcolor"
+        android:textSize="@dimen/keybutton_textsize"
         app:layout_constraintBottom_toTopOf="@+id/r3c1"
         app:layout_constraintEnd_toStartOf="@+id/r2c2"
         app:layout_constraintHorizontal_bias="0.5"
@@ -60,11 +73,14 @@
         app:layout_constraintTop_toBottomOf="@+id/r1c1"
         app:layout_constraintVertical_chainStyle="spread" />
 
-    <Button
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/r2c2"
-        android:layout_width="@dimen/key_button_dims"
-        android:layout_height="@dimen/key_button_dims"
+        android:layout_width="@dimen/keybutton_size"
+        android:layout_height="@dimen/keybutton_size"
         android:text="Fuck you android studio"
+        android:textAlignment="center"
+        android:textColor="@color/keybutton_textcolor"
+        android:textSize="@dimen/keybutton_textsize"
         app:layout_constraintBottom_toTopOf="@+id/r3c2"
         app:layout_constraintEnd_toStartOf="@+id/r2c3"
         app:layout_constraintHorizontal_bias="0.5"
@@ -73,11 +89,14 @@
         app:layout_constraintTop_toBottomOf="@+id/r1c2"
         app:layout_constraintVertical_chainStyle="spread" />
 
-    <Button
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/r2c3"
-        android:layout_width="@dimen/key_button_dims"
-        android:layout_height="@dimen/key_button_dims"
+        android:layout_width="@dimen/keybutton_size"
+        android:layout_height="@dimen/keybutton_size"
         android:text="Fuck you android studio"
+        android:textAlignment="center"
+        android:textColor="@color/keybutton_textcolor"
+        android:textSize="@dimen/keybutton_textsize"
         app:layout_constraintBottom_toTopOf="@+id/r3c3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -88,11 +107,14 @@
 
     <!-- Row 3 -->
 
-    <Button
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/r3c1"
-        android:layout_width="@dimen/key_button_dims"
-        android:layout_height="@dimen/key_button_dims"
+        android:layout_width="@dimen/keybutton_size"
+        android:layout_height="@dimen/keybutton_size"
         android:text="Fuck you android studio"
+        android:textAlignment="center"
+        android:textColor="@color/keybutton_textcolor"
+        android:textSize="@dimen/keybutton_textsize"
         app:layout_constraintBottom_toTopOf="@+id/r4c1"
         app:layout_constraintEnd_toStartOf="@+id/r3c2"
         app:layout_constraintHorizontal_bias="0.5"
@@ -101,11 +123,14 @@
         app:layout_constraintTop_toBottomOf="@+id/r2c1"
         app:layout_constraintVertical_chainStyle="spread" />
 
-    <Button
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/r3c2"
-        android:layout_width="@dimen/key_button_dims"
-        android:layout_height="@dimen/key_button_dims"
+        android:layout_width="@dimen/keybutton_size"
+        android:layout_height="@dimen/keybutton_size"
         android:text="Fuck you android studio"
+        android:textAlignment="center"
+        android:textColor="@color/keybutton_textcolor"
+        android:textSize="@dimen/keybutton_textsize"
         app:layout_constraintBottom_toTopOf="@+id/r4c2"
         app:layout_constraintEnd_toStartOf="@+id/r3c3"
         app:layout_constraintHorizontal_bias="0.5"
@@ -114,11 +139,14 @@
         app:layout_constraintTop_toBottomOf="@+id/r2c2"
         app:layout_constraintVertical_chainStyle="spread" />
 
-    <Button
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/r3c3"
-        android:layout_width="@dimen/key_button_dims"
-        android:layout_height="@dimen/key_button_dims"
+        android:layout_width="@dimen/keybutton_size"
+        android:layout_height="@dimen/keybutton_size"
         android:text="Fuck you android studio"
+        android:textAlignment="center"
+        android:textColor="@color/keybutton_textcolor"
+        android:textSize="@dimen/keybutton_textsize"
         app:layout_constraintBottom_toTopOf="@+id/r4c3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -129,11 +157,14 @@
 
     <!-- Row 4 -->
 
-    <Button
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/r4c1"
-        android:layout_width="@dimen/key_button_dims"
-        android:layout_height="@dimen/key_button_dims"
+        android:layout_width="@dimen/keybutton_size"
+        android:layout_height="@dimen/keybutton_size"
         android:text="Fuck you android studio"
+        android:textAlignment="center"
+        android:textColor="@color/keybutton_textcolor"
+        android:textSize="@dimen/keybutton_textsize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/r4c2"
         app:layout_constraintHorizontal_bias="0.5"
@@ -142,11 +173,14 @@
         app:layout_constraintTop_toBottomOf="@+id/r3c1"
         app:layout_constraintVertical_chainStyle="spread" />
 
-    <Button
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/r4c2"
-        android:layout_width="@dimen/key_button_dims"
-        android:layout_height="@dimen/key_button_dims"
+        android:layout_width="@dimen/keybutton_size"
+        android:layout_height="@dimen/keybutton_size"
         android:text="Fuck you android studio"
+        android:textAlignment="center"
+        android:textColor="@color/keybutton_textcolor"
+        android:textSize="@dimen/keybutton_textsize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/r4c3"
         app:layout_constraintHorizontal_bias="0.5"
@@ -155,11 +189,14 @@
         app:layout_constraintTop_toBottomOf="@+id/r3c2"
         app:layout_constraintVertical_chainStyle="spread" />
 
-    <Button
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/r4c3"
-        android:layout_width="@dimen/key_button_dims"
-        android:layout_height="@dimen/key_button_dims"
+        android:layout_width="@dimen/keybutton_size"
+        android:layout_height="@dimen/keybutton_size"
         android:text="buggy piece of shit"
+        android:textAlignment="center"
+        android:textColor="@color/keybutton_textcolor"
+        android:textSize="@dimen/keybutton_textsize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -168,4 +205,4 @@
         app:layout_constraintTop_toBottomOf="@+id/r3c3"
         app:layout_constraintVertical_chainStyle="spread" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,6 @@
 package com.cannonballapps.keycompanion.keys
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.cannonballapps.keycompanion.models.keyhandler.KeyHandlerImpl
 import com.cannonballapps.keycompanion.R

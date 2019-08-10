@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +7,7 @@
     android:background="@color/mainBackground"
     tools:context=".keys.KeysFragment">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/keys_grid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,20 +16,20 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttons_container">
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Function Button Container -->
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/buttons_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/function_spacing"
         android:layout_marginEnd="@dimen/function_spacing"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/keys_grid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/keys_grid">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <!-- Randomize Keys -->
 
@@ -37,22 +37,23 @@
             android:id="@+id/randomize_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/fab_background"
             android:layout_gravity="center_vertical|start"
+            android:background="@drawable/fab_background"
             android:padding="@dimen/function_border"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <android.support.design.widget.FloatingActionButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 app:backgroundTint="@color/mainBackground"
                 app:borderWidth="0dp"
                 app:elevation="0dp"
-                app:fabCustomSize="@dimen/function_size"
-                app:rippleColor="@android:color/darker_gray"
-                app:srcCompat="@drawable/ic_randomize" />
+                app:icon="@drawable/ic_randomize"
+                app:iconSize="@dimen/function_iconsize"
+                app:iconTint="@android:color/white"
+                app:rippleColor="@android:color/darker_gray" />
 
         </LinearLayout>
 
@@ -62,22 +63,23 @@
             android:id="@+id/flat_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/fab_background"
             android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/fab_background"
             android:padding="@dimen/function_border"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <android.support.design.widget.FloatingActionButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 app:backgroundTint="@color/mainBackground"
                 app:borderWidth="0dp"
                 app:elevation="0dp"
-                app:fabCustomSize="@dimen/function_size"
-                app:rippleColor="@android:color/darker_gray"
-                app:srcCompat="@drawable/ic_flat" />
+                app:icon="@drawable/ic_flat"
+                app:iconSize="@dimen/function_iconsize"
+                app:iconTint="@android:color/white"
+                app:rippleColor="@android:color/darker_gray" />
 
         </LinearLayout>
 
@@ -87,25 +89,26 @@
             android:id="@+id/sharp_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/fab_background"
             android:layout_gravity="center_vertical|end"
+            android:background="@drawable/fab_background"
             android:padding="@dimen/function_border"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <android.support.design.widget.FloatingActionButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 app:backgroundTint="@color/mainBackground"
                 app:borderWidth="0dp"
                 app:elevation="0dp"
-                app:fabCustomSize="@dimen/function_size"
-                app:rippleColor="@android:color/darker_gray"
-                app:srcCompat="@drawable/ic_sharp" />
+                app:icon="@drawable/ic_sharp"
+                app:iconSize="@dimen/function_iconsize"
+                app:iconTint="@android:color/white"
+                app:rippleColor="@android:color/darker_gray" />
 
         </LinearLayout>
 
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
