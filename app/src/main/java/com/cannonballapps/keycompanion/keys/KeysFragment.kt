@@ -2,32 +2,34 @@ package com.cannonballapps.keycompanion.keys
 
 import android.os.Bundle
 import android.support.constraint.ConstraintLayout
+import android.support.design.widget.FloatingActionButton
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.LinearLayout
 import com.cannonballapps.keycompanion.Key
 import com.cannonballapps.keycompanion.KeyData
 
 import com.cannonballapps.keycompanion.R
 
-/**
- * A simple [Fragment] subclass.
- *
- */
 class KeysFragment : Fragment(), KeysContract.View {
 
     private lateinit var keysGridContainer: ConstraintLayout
 
     private lateinit var keysGrid: ConstraintLayout
 
-    private lateinit var randomizeButton: Button
+    private lateinit var randomizeButton: LinearLayout
+
+    private lateinit var sharpButton: LinearLayout
+
+    private lateinit var flatButton: LinearLayout
 
     override lateinit var presenter: KeysContract.Presenter
 
     // Key Buttons ordered by key index.
-    private var keyButtons = arrayOfNulls<Button>(KeyData.NUM_KEYS)
+    private var keyButtons = arrayOfNulls<Button>(KeyData.NAMES_FLAT.size)
 
     // Todo: probably delete this function
     override fun showKey(toShow: Key) {
@@ -58,8 +60,16 @@ class KeysFragment : Fragment(), KeysContract.View {
         keysGridContainer.addView(keysGrid)
 
         with (root) {
+            // Setup Buttons
+            
             randomizeButton = findViewById(R.id.randomize_button)
             randomizeButton.setOnClickListener { presenter.randomizeKeys() }
+
+            flatButton = findViewById(R.id.flat_button)
+            flatButton.setOnClickListener { presenter.setAllKeysFlat() }
+
+            sharpButton = findViewById(R.id.sharp_button)
+            sharpButton.setOnClickListener { presenter.setAllKeysSharp() }
         }
 
         return root

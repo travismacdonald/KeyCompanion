@@ -1,10 +1,5 @@
 package com.cannonballapps.keycompanion
 
-/**
- * Class contains two different spellings; flat and sharp.
- * Some cases it may be the same Spelling (flat = C; sharp = C)
- * Other keys contain two different spellings (flat = C#; Db)
- */
 class Key(val ix: Int) {
 
     private enum class Spelling {
