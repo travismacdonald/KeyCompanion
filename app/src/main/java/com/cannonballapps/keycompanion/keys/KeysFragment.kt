@@ -22,6 +22,10 @@ class KeysFragment : Fragment(), KeysContract.View {
 
     private lateinit var randomizeButton: LinearLayout
 
+    private lateinit var sharpButton: LinearLayout
+
+    private lateinit var flatButton: LinearLayout
+
     override lateinit var presenter: KeysContract.Presenter
 
     // Key Buttons ordered by key index.
@@ -56,8 +60,16 @@ class KeysFragment : Fragment(), KeysContract.View {
         keysGridContainer.addView(keysGrid)
 
         with (root) {
+            // Setup Buttons
+            
             randomizeButton = findViewById(R.id.randomize_button)
             randomizeButton.setOnClickListener { presenter.randomizeKeys() }
+
+            flatButton = findViewById(R.id.flat_button)
+            flatButton.setOnClickListener { presenter.setAllKeysFlat() }
+
+            sharpButton = findViewById(R.id.sharp_button)
+            sharpButton.setOnClickListener { presenter.setAllKeysSharp() }
         }
 
         return root
