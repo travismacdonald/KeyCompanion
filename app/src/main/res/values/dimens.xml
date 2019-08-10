@@ -5,17 +5,17 @@
     <dimen name="key_button_dims">60dp</dimen>
 
     <!-- Height of Key grid -->
-    <dimen name="key_layout_height">400dp</dimen>
+    <dimen name="key_layout_height">440dp</dimen>
 
     <!-- Function Buttons -->
     <dimen name="function_border">3dp</dimen>
     <dimen name="function_size">2dp</dimen>
-    <dimen name="function_iconsize">12dp</dimen>
+    <dimen name="function_iconsize">10dp</dimen>
     <dimen name="function_spacing">40dp</dimen>
 
     <!-- Key Buttons -->
     <dimen name="keybutton_border">3dp</dimen>
-    <dimen name="keybutton_size">86dp</dimen>
-    <dimen name="keybutton_textsize">28sp</dimen>
+    <dimen name="keybutton_size">72dp</dimen>
+    <dimen name="keybutton_textsize">24sp</dimen>
 
 </resources>

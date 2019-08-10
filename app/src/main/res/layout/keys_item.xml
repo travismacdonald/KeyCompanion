@@ -6,234 +6,322 @@
 
     <!-- Row 1 -->
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+    <LinearLayout
         android:id="@+id/r1c1"
-        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-        android:layout_width="@dimen/keybutton_size"
-        android:layout_height="@dimen/keybutton_size"
-        android:fontFamily="@string/keybutton_font"
-        android:text="Fuck you android studio"
-        android:textAlignment="center"
-        android:textColor="@color/keybutton_textcolor"
-        android:textSize="@dimen/keybutton_textsize"
-        app:backgroundTint="@color/mainBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fab_background"
+        android:padding="@dimen/function_border"
         app:layout_constraintBottom_toTopOf="@+id/r2c1"
         app:layout_constraintEnd_toStartOf="@+id/r1c2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintVertical_chainStyle="spread">
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/keybutton_size"
+            android:layout_height="@dimen/keybutton_size"
+            android:fontFamily="@string/keybutton_font"
+            android:textAlignment="center"
+            android:textColor="@color/keybutton_textcolor"
+            android:textSize="@dimen/keybutton_textsize"
+            app:backgroundTint="@color/mainBackground" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/r1c2"
-        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-        android:layout_width="@dimen/keybutton_size"
-        android:layout_height="@dimen/keybutton_size"
-        android:fontFamily="@string/keybutton_font"
-
-        android:text="Fuck you android studio"
-        android:textAlignment="center"
-        android:textColor="@color/keybutton_textcolor"
-        android:textSize="@dimen/keybutton_textsize"
-        app:backgroundTint="@color/mainBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fab_background"
+        android:padding="@dimen/function_border"
         app:layout_constraintBottom_toTopOf="@+id/r2c2"
-        app:layout_constraintEnd_toStartOf="@+id/row1c3"
+        app:layout_constraintEnd_toStartOf="@+id/r1c3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/r1c1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintVertical_chainStyle="spread">
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/row1c3"
-        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-        android:layout_width="@dimen/keybutton_size"
-        android:layout_height="@dimen/keybutton_size"
-        android:fontFamily="@string/keybutton_font"
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/keybutton_size"
+            android:layout_height="@dimen/keybutton_size"
+            android:fontFamily="@string/keybutton_font"
+            android:textAlignment="center"
+            android:textColor="@color/keybutton_textcolor"
+            android:textSize="@dimen/keybutton_textsize"
+            app:backgroundTint="@color/mainBackground" />
 
-        android:text="Fuck you android studio"
-        android:textAlignment="center"
-        android:textColor="@color/keybutton_textcolor"
-        android:textSize="@dimen/keybutton_textsize"
-        app:backgroundTint="@color/mainBackground"
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/r1c3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fab_background"
+        android:padding="@dimen/function_border"
         app:layout_constraintBottom_toTopOf="@+id/r2c3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/r1c2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/keybutton_size"
+            android:layout_height="@dimen/keybutton_size"
+            android:fontFamily="@string/keybutton_font"
+            android:textAlignment="center"
+            android:textColor="@color/keybutton_textcolor"
+            android:textSize="@dimen/keybutton_textsize"
+            app:backgroundTint="@color/mainBackground" />
+
+    </LinearLayout>
 
     <!-- Row 2 -->
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+    <LinearLayout
         android:id="@+id/r2c1"
-        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-        android:layout_width="@dimen/keybutton_size"
-        android:layout_height="@dimen/keybutton_size"
-        android:fontFamily="@string/keybutton_font"
-
-        android:text="Fuck you android studio"
-        android:textAlignment="center"
-        android:textColor="@color/keybutton_textcolor"
-        android:textSize="@dimen/keybutton_textsize"
-        app:backgroundTint="@color/mainBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fab_background"
+        android:padding="@dimen/function_border"
         app:layout_constraintBottom_toTopOf="@+id/r3c1"
         app:layout_constraintEnd_toStartOf="@+id/r2c2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/r1c1"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintVertical_chainStyle="spread">
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/keybutton_size"
+            android:layout_height="@dimen/keybutton_size"
+            android:fontFamily="@string/keybutton_font"
+            android:textAlignment="center"
+            android:textColor="@color/keybutton_textcolor"
+            android:textSize="@dimen/keybutton_textsize"
+            app:backgroundTint="@color/mainBackground" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/r2c2"
-        android:layout_width="@dimen/keybutton_size"
-        android:layout_height="@dimen/keybutton_size"
-        android:fontFamily="@string/keybutton_font"
-        android:text="Fuck you android studio"
-        android:textAlignment="center"
-        android:textColor="@color/keybutton_textcolor"
-        android:textSize="@dimen/keybutton_textsize"
-
-        app:backgroundTint="@color/mainBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fab_background"
+        android:padding="@dimen/function_border"
         app:layout_constraintBottom_toTopOf="@+id/r3c2"
         app:layout_constraintEnd_toStartOf="@+id/r2c3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/r2c1"
         app:layout_constraintTop_toBottomOf="@+id/r1c2"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintVertical_chainStyle="spread">
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/keybutton_size"
+            android:layout_height="@dimen/keybutton_size"
+            android:fontFamily="@string/keybutton_font"
+            android:textAlignment="center"
+            android:textColor="@color/keybutton_textcolor"
+            android:textSize="@dimen/keybutton_textsize"
+            app:backgroundTint="@color/mainBackground" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/r2c3"
-        android:layout_width="@dimen/keybutton_size"
-        android:layout_height="@dimen/keybutton_size"
-        android:fontFamily="@string/keybutton_font"
-        android:text="Fuck you android studio"
-        android:textAlignment="center"
-        android:textColor="@color/keybutton_textcolor"
-        android:textSize="@dimen/keybutton_textsize"
-        app:backgroundTint="@color/mainBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fab_background"
+        android:padding="@dimen/function_border"
         app:layout_constraintBottom_toTopOf="@+id/r3c3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/r2c2"
-        app:layout_constraintTop_toBottomOf="@+id/row1c3"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintTop_toBottomOf="@+id/r1c3"
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/keybutton_size"
+            android:layout_height="@dimen/keybutton_size"
+            android:fontFamily="@string/keybutton_font"
+            android:textAlignment="center"
+            android:textColor="@color/keybutton_textcolor"
+            android:textSize="@dimen/keybutton_textsize"
+            app:backgroundTint="@color/mainBackground" />
+
+    </LinearLayout>
 
     <!-- Row 3 -->
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+    <LinearLayout
         android:id="@+id/r3c1"
-        android:layout_width="@dimen/keybutton_size"
-        android:layout_height="@dimen/keybutton_size"
-        android:fontFamily="@string/keybutton_font"
-        android:text="Fuck you android studio"
-        android:textAlignment="center"
-        android:textColor="@color/keybutton_textcolor"
-        android:textSize="@dimen/keybutton_textsize"
-        app:backgroundTint="@color/mainBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fab_background"
+        android:padding="@dimen/function_border"
         app:layout_constraintBottom_toTopOf="@+id/r4c1"
         app:layout_constraintEnd_toStartOf="@+id/r3c2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/r2c1"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintVertical_chainStyle="spread">
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/keybutton_size"
+            android:layout_height="@dimen/keybutton_size"
+            android:fontFamily="@string/keybutton_font"
+            android:textAlignment="center"
+            android:textColor="@color/keybutton_textcolor"
+            android:textSize="@dimen/keybutton_textsize"
+            app:backgroundTint="@color/mainBackground" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/r3c2"
-        android:layout_width="@dimen/keybutton_size"
-        android:layout_height="@dimen/keybutton_size"
-        android:fontFamily="@string/keybutton_font"
-        android:text="Fuck you android studio"
-        android:textAlignment="center"
-        android:textColor="@color/keybutton_textcolor"
-        android:textSize="@dimen/keybutton_textsize"
-        app:backgroundTint="@color/mainBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fab_background"
+        android:padding="@dimen/function_border"
         app:layout_constraintBottom_toTopOf="@+id/r4c2"
         app:layout_constraintEnd_toStartOf="@+id/r3c3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/r3c1"
         app:layout_constraintTop_toBottomOf="@+id/r2c2"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintVertical_chainStyle="spread">
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/keybutton_size"
+            android:layout_height="@dimen/keybutton_size"
+            android:fontFamily="@string/keybutton_font"
+            android:textAlignment="center"
+            android:textColor="@color/keybutton_textcolor"
+            android:textSize="@dimen/keybutton_textsize"
+            app:backgroundTint="@color/mainBackground" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/r3c3"
-        android:layout_width="@dimen/keybutton_size"
-        android:layout_height="@dimen/keybutton_size"
-        android:fontFamily="@string/keybutton_font"
-        android:text="Fuck you android studio"
-        android:textAlignment="center"
-        android:textColor="@color/keybutton_textcolor"
-        android:textSize="@dimen/keybutton_textsize"
-        app:backgroundTint="@color/mainBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fab_background"
+        android:padding="@dimen/function_border"
         app:layout_constraintBottom_toTopOf="@+id/r4c3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/r3c2"
         app:layout_constraintTop_toBottomOf="@+id/r2c3"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/keybutton_size"
+            android:layout_height="@dimen/keybutton_size"
+            android:fontFamily="@string/keybutton_font"
+            android:textAlignment="center"
+            android:textColor="@color/keybutton_textcolor"
+            android:textSize="@dimen/keybutton_textsize"
+            app:backgroundTint="@color/mainBackground" />
+
+    </LinearLayout>
 
     <!-- Row 4 -->
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+    <LinearLayout
         android:id="@+id/r4c1"
-        android:layout_width="@dimen/keybutton_size"
-        android:layout_height="@dimen/keybutton_size"
-        android:fontFamily="@string/keybutton_font"
-        android:text="Fuck you android studio"
-        android:textAlignment="center"
-        android:textColor="@color/keybutton_textcolor"
-        android:textSize="@dimen/keybutton_textsize"
-        app:backgroundTint="@color/mainBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fab_background"
+        android:padding="@dimen/function_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/r4c2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/r3c1"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintVertical_chainStyle="spread">
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/keybutton_size"
+            android:layout_height="@dimen/keybutton_size"
+            android:fontFamily="@string/keybutton_font"
+            android:textAlignment="center"
+            android:textColor="@color/keybutton_textcolor"
+            android:textSize="@dimen/keybutton_textsize"
+            app:backgroundTint="@color/mainBackground" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/r4c2"
-        android:layout_width="@dimen/keybutton_size"
-        android:layout_height="@dimen/keybutton_size"
-        android:fontFamily="@string/keybutton_font"
-        android:text="Fuck you android studio"
-        android:textAlignment="center"
-        android:textColor="@color/keybutton_textcolor"
-        android:textSize="@dimen/keybutton_textsize"
-        app:backgroundTint="@color/mainBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fab_background"
+        android:padding="@dimen/function_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/r4c3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/r4c1"
         app:layout_constraintTop_toBottomOf="@+id/r3c2"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintVertical_chainStyle="spread">
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/keybutton_size"
+            android:layout_height="@dimen/keybutton_size"
+            android:fontFamily="@string/keybutton_font"
+            android:textAlignment="center"
+            android:textColor="@color/keybutton_textcolor"
+            android:textSize="@dimen/keybutton_textsize"
+            app:backgroundTint="@color/mainBackground" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/r4c3"
-        android:layout_width="@dimen/keybutton_size"
-        android:layout_height="@dimen/keybutton_size"
-        android:fontFamily="@string/keybutton_font"
-        android:text="buggy piece of shit"
-        android:textAlignment="center"
-        android:textColor="@color/keybutton_textcolor"
-        android:textSize="@dimen/keybutton_textsize"
-        app:backgroundTint="@color/mainBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fab_background"
+        android:padding="@dimen/function_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/r4c2"
         app:layout_constraintTop_toBottomOf="@+id/r3c3"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/keybutton_size"
+            android:layout_height="@dimen/keybutton_size"
+            android:fontFamily="@string/keybutton_font"
+            android:textAlignment="center"
+            android:textColor="@color/keybutton_textcolor"
+            android:textSize="@dimen/keybutton_textsize"
+            app:backgroundTint="@color/mainBackground" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

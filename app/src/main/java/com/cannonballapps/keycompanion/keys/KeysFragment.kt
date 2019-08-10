@@ -35,8 +35,14 @@ class KeysFragment : androidx.fragment.app.Fragment(), KeysContract.View {
     }
 
     override fun showAllKeys(keyList: MutableList<Key>) {
+//        val testFab = ((keysGrid.getChildAt(0) as LinearLayout).getChildAt(0) as ExtendedFloatingActionButton)
+//        testFab.text = keyList[0].name
+//        testFab.tag = keyList[0]
+//        testFab.setOnClickListener { presenter.changeKeySpelling(testFab.tag as Key) }
+
         for (childIx in 0 until keysGrid.childCount) {
-            val curButton = (keysGrid.getChildAt(childIx) as ExtendedFloatingActionButton)
+            val curButton = ((keysGrid.getChildAt(childIx) as LinearLayout)
+                    .getChildAt(0) as ExtendedFloatingActionButton)
             curButton.text = keyList[childIx].name
             curButton.tag = keyList[childIx]
             curButton.setOnClickListener { presenter.changeKeySpelling(curButton.tag as Key) }
