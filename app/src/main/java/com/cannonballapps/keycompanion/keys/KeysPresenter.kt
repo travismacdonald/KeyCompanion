@@ -2,39 +2,46 @@ package com.cannonballapps.keycompanion.keys
 
 import com.cannonballapps.keycompanion.Key
 import com.cannonballapps.keycompanion.models.keydatasource.KeysDataSource
+import com.cannonballapps.keycompanion.models.keyhandler.KeyHandler
 
 class KeysPresenter(
-        val keysDataSource: KeysDataSource,
-        val keysView: KeysContract.View
+        private val keysDataSource: KeysDataSource,
+        private val keyHandler: KeyHandler,
+        private val keysView: KeysContract.View
 ) : KeysContract.Presenter {
 
-    // Todo: reference to KeyHandlerImpl
-    // Todo: reference to KeysFragment
+    lateinit var keyList: MutableList<Key>
+
+    override fun finish() {
+        keysDataSource.saveKeys(keyList)
+    }
 
     init {
         keysView.presenter = this
     }
 
     override fun start() {
+        keyList = keysDataSource.loadKeys()
         randomizeKeys()
     }
 
     override fun changeKeySpelling(toChange: Key) {
-        keysDataSource.toggleKeyName(toChange)
+        keyHandler.toggleKeyName(toChange)
         keysView.showKey(toChange)
     }
 
     override fun randomizeKeys() {
-        keysDataSource.randomizeKeys()
-        keysView.showAllKeys(keysDataSource.loadKeys())
+        keyHandler.randomizeKeys(keyList)
+        keysView.showAllKeys(keyList)
     }
 
     override fun setAllKeysFlat() {
-        keysDataSource.setAllNamesFlat()
-        keysView.showAllKeys(keysDataSource.loadKeys())
+        keyHandler.setAllNamesFlat(keyList)
+        keysView.showAllKeys(keyList)
     }
 
     override fun setAllKeysSharp() {
-        keysDataSource.setAllNamesSharp()
-        keysView.showAllKeys(keysDataSource.loadKeys())    }
+        keyHandler.setAllNamesSharp(keyList)
+        keysView.showAllKeys(keyList)
+    }
 }

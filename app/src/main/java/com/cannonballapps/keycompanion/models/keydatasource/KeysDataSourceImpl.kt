@@ -1,31 +1,21 @@
 package com.cannonballapps.keycompanion.models.keydatasource
 
 import com.cannonballapps.keycompanion.Key
+import com.cannonballapps.keycompanion.KeyData.Companion.NUM_KEYS
 
-public class KeysDataSourceImpl : KeysDataSource {
-
-    override fun getKey(ix: Int): Key {
-        // fuck this method
-    }
-
-    override fun randomizeKeys() {
-
-    }
-
-    override fun toggleKeyName(toChange: Key) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun setAllNamesFlat() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun setAllNamesSharp() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+class KeysDataSourceImpl : KeysDataSource {
 
     override fun loadKeys(): MutableList<Key> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val keyList = mutableListOf<Key>()
+        for (i in 0 until NUM_KEYS) {
+            val curKey = Key(i)
+            keyList.add(curKey)
+        }
+        return keyList
+    }
+
+    override fun saveKeys(keyList: MutableList<Key>) {
+        TODO("save to prefs") //To change body of created functions use File | Settings | File Templates.
     }
 
 
