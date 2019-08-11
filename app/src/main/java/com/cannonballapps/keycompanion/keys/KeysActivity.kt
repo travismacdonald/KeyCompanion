@@ -14,7 +14,6 @@ class KeysActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.keys_activity)
 
-
         val keysFragment = supportFragmentManager.findFragmentById(R.id.contentFrame) as KeysFragment?
                 ?: KeysFragment.newInstance()
 
