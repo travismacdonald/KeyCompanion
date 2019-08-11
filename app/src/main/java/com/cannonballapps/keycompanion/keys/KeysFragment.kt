@@ -10,11 +10,14 @@ import android.widget.LinearLayout
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
 import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
+import androidx.core.content.res.ResourcesCompat
 import com.cannonballapps.keycompanion.Key
 import com.cannonballapps.keycompanion.KeyData
 import com.cannonballapps.keycompanion.R
 
 class KeysFragment : androidx.fragment.app.Fragment(), KeysContract.View {
+
+    // Added overhead for animation. Haven't got it to work properly yet.
 
     private val FADE_DURATION: Long = 200
 
@@ -67,10 +70,13 @@ class KeysFragment : androidx.fragment.app.Fragment(), KeysContract.View {
             inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val root = inflater.inflate(R.layout.keys_frag, container, false)
+
         keysGridContainer = root.findViewById(R.id.keys_grid)
         keysGrid = inflater.inflate(R.layout.keys_item, root as ViewGroup, false) as ConstraintLayout
         keysGridContainer.addView(keysGrid)
-        setupTextAnimators()
+
+        setupFont()
+//        setupTextAnimators()
 
         with (root) {
             // Setup Buttons
@@ -85,6 +91,13 @@ class KeysFragment : androidx.fragment.app.Fragment(), KeysContract.View {
         }
 
         return root
+    }
+
+    private fun setupFont() {
+        val typeface = context?.let { ResourcesCompat.getFont(it, R.font.deja_vu_sans_fam) }
+        for (childIx in 0 until keysGrid.childCount) {
+            ((keysGrid.getChildAt(childIx) as LinearLayout).getChildAt(0) as ExtendedFloatingActionButton).typeface = typeface
+        }
     }
 
     private fun animateKeyButtonText(newText: String, view: ExtendedFloatingActionButton) {

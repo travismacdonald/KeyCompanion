@@ -16,6 +16,6 @@
     <!-- Key Buttons -->
     <dimen name="keybutton_border">3dp</dimen>
     <dimen name="keybutton_size">72dp</dimen>
-    <dimen name="keybutton_textsize">24sp</dimen>
+    <dimen name="keybutton_textsize">20sp</dimen>
 
 </resources>
