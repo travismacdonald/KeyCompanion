@@ -1,8 +1,4 @@
-package com.cannonballapps.keycompanion
-
-import com.cannonballapps.keycompanion.models.keyhandler.KeyHandlerImpl
-import org.junit.Assert.*
-import org.junit.Test
+package com.convergencelabstfx.keycompanion
 
 class KeyRandomizerTest {
 //

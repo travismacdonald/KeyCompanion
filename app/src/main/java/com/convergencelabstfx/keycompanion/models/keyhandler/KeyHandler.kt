@@ -1,6 +1,6 @@
-package com.cannonballapps.keycompanion.models.keyhandler
+package com.convergencelabstfx.keycompanion.models.keyhandler
 
-import com.cannonballapps.keycompanion.Key
+import com.convergencelabstfx.keycompanion.Key
 
 interface KeyHandler {
 

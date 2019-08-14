@@ -1,8 +1,8 @@
-package com.cannonballapps.keycompanion.keys
+package com.convergencelabstfx.keycompanion.keys
 
-import com.cannonballapps.keycompanion.Key
-import com.cannonballapps.keycompanion.models.keydatasource.KeysDataSource
-import com.cannonballapps.keycompanion.models.keyhandler.KeyHandler
+import com.convergencelabstfx.keycompanion.Key
+import com.convergencelabstfx.keycompanion.models.keydatasource.KeysDataSource
+import com.convergencelabstfx.keycompanion.models.keyhandler.KeyHandler
 
 class KeysPresenter(
         private val keysDataSource: KeysDataSource,

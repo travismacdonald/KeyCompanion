@@ -1,4 +1,4 @@
-package com.cannonballapps.keycompanion.keys
+package com.convergencelabstfx.keycompanion.keys
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,9 +11,9 @@ import com.google.android.material.floatingactionbutton.ExtendedFloatingActionBu
 import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
 import androidx.core.content.res.ResourcesCompat
-import com.cannonballapps.keycompanion.Key
-import com.cannonballapps.keycompanion.KeyData
-import com.cannonballapps.keycompanion.R
+import com.convergencelabstfx.keycompanion.Key
+import com.convergencelabstfx.keycompanion.KeyData
+import com.convergencelabstfx.keycompanion.R
 
 class KeysFragment : androidx.fragment.app.Fragment(), KeysContract.View {
 

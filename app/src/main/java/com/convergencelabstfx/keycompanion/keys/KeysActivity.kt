@@ -1,10 +1,10 @@
-package com.cannonballapps.keycompanion.keys
+package com.convergencelabstfx.keycompanion.keys
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.cannonballapps.keycompanion.models.keyhandler.KeyHandlerImpl
-import com.cannonballapps.keycompanion.R
-import com.cannonballapps.keycompanion.models.keydatasource.KeysDataSourceImpl
+import com.convergencelabstfx.keycompanion.models.keyhandler.KeyHandlerImpl
+import com.convergencelabstfx.keycompanion.R
+import com.convergencelabstfx.keycompanion.models.keydatasource.KeysDataSourceImpl
 
 class KeysActivity : AppCompatActivity() {
 
