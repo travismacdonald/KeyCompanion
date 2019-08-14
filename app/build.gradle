@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.cannonballapps.keycompanion"
+        applicationId "com.convergencelabstfx.keycompanion"
         vectorDrawables.useSupportLibrary = true
         minSdkVersion 18
         targetSdkVersion 28

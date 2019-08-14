@@ -1,4 +1,4 @@
-package com.cannonballapps.keycompanion
+package com.convergencelabstfx.keycompanion
 
 class KeyData {
 

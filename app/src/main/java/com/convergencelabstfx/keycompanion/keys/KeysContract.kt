@@ -1,8 +1,8 @@
-package com.cannonballapps.keycompanion.keys
+package com.convergencelabstfx.keycompanion.keys
 
-import com.cannonballapps.keycompanion.BasePresenter
-import com.cannonballapps.keycompanion.BaseView
-import com.cannonballapps.keycompanion.Key
+import com.convergencelabstfx.keycompanion.BasePresenter
+import com.convergencelabstfx.keycompanion.BaseView
+import com.convergencelabstfx.keycompanion.Key
 
 interface KeysContract {
 

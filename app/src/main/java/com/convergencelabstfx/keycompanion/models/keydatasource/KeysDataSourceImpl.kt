@@ -1,7 +1,7 @@
-package com.cannonballapps.keycompanion.models.keydatasource
+package com.convergencelabstfx.keycompanion.models.keydatasource
 
-import com.cannonballapps.keycompanion.Key
-import com.cannonballapps.keycompanion.KeyData.Companion.NUM_KEYS
+import com.convergencelabstfx.keycompanion.Key
+import com.convergencelabstfx.keycompanion.KeyData.Companion.NUM_KEYS
 
 class KeysDataSourceImpl : KeysDataSource {
 
