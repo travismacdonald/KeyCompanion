@@ -5,8 +5,20 @@
         <item name="colorPrimary">#444444</item>
         <item name="colorPrimaryDark">#444444</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/mainBackground</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/mainBackground
+        </item>
         <item name="android:windowBackground">@color/mainBackground</item>
+    </style>
+
+    <style name="KeyButton">
+        <item name="android:textColor">@color/keyButton_text</item>
+        <item name="android:textSize">@dimen/keyButton_textSize</item>
+        <item name="android:background">@drawable/key_button_background</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">@dimen/keyButton_diameter</item>
+        <item name="android:layout_width">@dimen/keyButton_diameter</item>
     </style>
 
 </resources>

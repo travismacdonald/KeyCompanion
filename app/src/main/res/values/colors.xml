@@ -8,5 +8,7 @@
     <color name="mainBackground">#000000</color>
 
     <!-- Key Button -->
-    <color name="keybutton_textcolor">#FFFFFF</color>
+    <color name="keyButton_text">#FFFFFF</color>
+    <color name="keyButton_ripple">#BA8E0A</color>
+
 </resources>
