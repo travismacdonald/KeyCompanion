@@ -1,5 +1,5 @@
 # KeyCompanion
-Random music key generator. App displays keys on screen with flat or sharp spelling.
+Random key generator for practicing in 12 keys.
 
 ## TODO
 - Layout for tablet
