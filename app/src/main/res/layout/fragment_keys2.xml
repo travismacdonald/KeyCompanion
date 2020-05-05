@@ -7,20 +7,56 @@
     tools:context=".KeysFragment2">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/functions_container"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@id/keys_container"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/randomize_button"
+            style="@style/FunctionButton"
+            android:src="@drawable/ic_randomize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/sharp_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/sharp_button"
+            style="@style/FunctionButton"
+            android:src="@drawable/ic_sharp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/flat_button"
+            app:layout_constraintStart_toEndOf="@id/randomize_button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/flat_button"
+            style="@style/FunctionButton"
+            android:src="@drawable/ic_flat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/sharp_button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/keys_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/functions_container">
 
         <TextView
             android:id="@+id/row0_col0"
             style="@style/KeyButton"
             android:text="C"
             app:layout_constraintBottom_toTopOf="@id/row1_col0"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/row0_col1"
+            app:layout_constraintRight_toLeftOf="@id/row0_col1"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="spread_inside"
             tools:text="C" />
 
         <TextView
@@ -29,9 +65,8 @@
             android:text="C"
             app:layout_constraintBottom_toTopOf="@id/row1_col1"
             app:layout_constraintLeft_toRightOf="@id/row0_col0"
-            app:layout_constraintRight_toLeftOf="@+id/row0_col2"
+            app:layout_constraintRight_toLeftOf="@id/row0_col2"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="spread_inside"
             tools:text="C#" />
 
         <TextView
@@ -42,7 +77,6 @@
             app:layout_constraintLeft_toRightOf="@id/row0_col1"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="spread_inside"
             tools:text="D" />
 
         <TextView
@@ -50,9 +84,8 @@
             style="@style/KeyButton"
             android:text="C"
             app:layout_constraintBottom_toTopOf="@id/row2_col0"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/row1_col1"
+            app:layout_constraintRight_toLeftOf="@id/row1_col1"
             app:layout_constraintTop_toBottomOf="@id/row0_col0"
             tools:text="D#" />
 
@@ -62,7 +95,7 @@
             android:text="C"
             app:layout_constraintBottom_toTopOf="@id/row2_col1"
             app:layout_constraintLeft_toRightOf="@id/row1_col0"
-            app:layout_constraintRight_toLeftOf="@+id/row1_col2"
+            app:layout_constraintRight_toLeftOf="@id/row1_col2"
             app:layout_constraintTop_toBottomOf="@id/row0_col1"
             tools:text="E" />
 
@@ -81,9 +114,8 @@
             style="@style/KeyButton"
             android:text="C"
             app:layout_constraintBottom_toTopOf="@id/row3_col0"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/row2_col1"
+            app:layout_constraintRight_toLeftOf="@id/row2_col1"
             app:layout_constraintTop_toBottomOf="@id/row1_col0"
             tools:text="F#" />
 
@@ -93,7 +125,7 @@
             android:text="C"
             app:layout_constraintBottom_toTopOf="@id/row3_col1"
             app:layout_constraintLeft_toRightOf="@id/row2_col0"
-            app:layout_constraintRight_toLeftOf="@+id/row2_col2"
+            app:layout_constraintRight_toLeftOf="@id/row2_col2"
             app:layout_constraintTop_toBottomOf="@id/row1_col1"
             tools:text="G" />
 
@@ -112,9 +144,8 @@
             style="@style/KeyButton"
             android:text="C"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/row3_col1"
+            app:layout_constraintRight_toLeftOf="@id/row3_col1"
             app:layout_constraintTop_toBottomOf="@id/row2_col0"
             tools:text="A" />
 
@@ -124,7 +155,7 @@
             android:text="C"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toRightOf="@id/row3_col0"
-            app:layout_constraintRight_toLeftOf="@+id/row3_col2"
+            app:layout_constraintRight_toLeftOf="@id/row3_col2"
             app:layout_constraintTop_toBottomOf="@id/row2_col1"
             tools:text="Bb" />
 

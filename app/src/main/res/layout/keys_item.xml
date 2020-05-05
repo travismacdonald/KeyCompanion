@@ -25,7 +25,7 @@
             android:layout_width="@dimen/keyButton_diameter"
             android:layout_height="@dimen/keyButton_diameter"
             android:textAlignment="center"
-            android:textColor="@color/keyButton_text"
+            android:textColor="@color/abstractButton_text"
             android:textSize="@dimen/keyButton_textSize"
             app:backgroundTint="@color/mainBackground"
             app:rippleColor="@android:color/darker_gray" />
@@ -51,7 +51,7 @@
             android:layout_width="@dimen/keyButton_diameter"
             android:layout_height="@dimen/keyButton_diameter"
             android:textAlignment="center"
-            android:textColor="@color/keyButton_text"
+            android:textColor="@color/abstractButton_text"
             android:textSize="@dimen/keyButton_textSize"
             app:backgroundTint="@color/mainBackground"
             app:rippleColor="@android:color/darker_gray" />
@@ -77,7 +77,7 @@
             android:layout_width="@dimen/keyButton_diameter"
             android:layout_height="@dimen/keyButton_diameter"
             android:textAlignment="center"
-            android:textColor="@color/keyButton_text"
+            android:textColor="@color/abstractButton_text"
             android:textSize="@dimen/keyButton_textSize"
             app:backgroundTint="@color/mainBackground"
             app:rippleColor="@android:color/darker_gray" />
@@ -105,7 +105,7 @@
             android:layout_width="@dimen/keyButton_diameter"
             android:layout_height="@dimen/keyButton_diameter"
             android:textAlignment="center"
-            android:textColor="@color/keyButton_text"
+            android:textColor="@color/abstractButton_text"
             android:textSize="@dimen/keyButton_textSize"
             app:backgroundTint="@color/mainBackground"
             app:rippleColor="@android:color/darker_gray" />
@@ -131,7 +131,7 @@
             android:layout_width="@dimen/keyButton_diameter"
             android:layout_height="@dimen/keyButton_diameter"
             android:textAlignment="center"
-            android:textColor="@color/keyButton_text"
+            android:textColor="@color/abstractButton_text"
             android:textSize="@dimen/keyButton_textSize"
             app:backgroundTint="@color/mainBackground"
             app:rippleColor="@android:color/darker_gray" />
@@ -157,7 +157,7 @@
             android:layout_width="@dimen/keyButton_diameter"
             android:layout_height="@dimen/keyButton_diameter"
             android:textAlignment="center"
-            android:textColor="@color/keyButton_text"
+            android:textColor="@color/abstractButton_text"
             android:textSize="@dimen/keyButton_textSize"
             app:backgroundTint="@color/mainBackground"
             app:rippleColor="@android:color/darker_gray" />
@@ -185,7 +185,7 @@
             android:layout_width="@dimen/keyButton_diameter"
             android:layout_height="@dimen/keyButton_diameter"
             android:textAlignment="center"
-            android:textColor="@color/keyButton_text"
+            android:textColor="@color/abstractButton_text"
             android:textSize="@dimen/keyButton_textSize"
             app:backgroundTint="@color/mainBackground"
             app:rippleColor="@android:color/darker_gray" />
@@ -211,7 +211,7 @@
             android:layout_width="@dimen/keyButton_diameter"
             android:layout_height="@dimen/keyButton_diameter"
             android:textAlignment="center"
-            android:textColor="@color/keyButton_text"
+            android:textColor="@color/abstractButton_text"
             android:textSize="@dimen/keyButton_textSize"
 
             app:backgroundTint="@color/mainBackground"
@@ -238,7 +238,7 @@
             android:layout_width="@dimen/keyButton_diameter"
             android:layout_height="@dimen/keyButton_diameter"
             android:textAlignment="center"
-            android:textColor="@color/keyButton_text"
+            android:textColor="@color/abstractButton_text"
             android:textSize="@dimen/keyButton_textSize"
             app:backgroundTint="@color/mainBackground"
             app:rippleColor="@android:color/darker_gray" />
@@ -266,7 +266,7 @@
             android:layout_width="@dimen/keyButton_diameter"
             android:layout_height="@dimen/keyButton_diameter"
             android:textAlignment="center"
-            android:textColor="@color/keyButton_text"
+            android:textColor="@color/abstractButton_text"
             android:textSize="@dimen/keyButton_textSize"
             app:backgroundTint="@color/mainBackground"
             app:rippleColor="@android:color/darker_gray" />
@@ -292,7 +292,7 @@
             android:layout_width="@dimen/keyButton_diameter"
             android:layout_height="@dimen/keyButton_diameter"
             android:textAlignment="center"
-            android:textColor="@color/keyButton_text"
+            android:textColor="@color/abstractButton_text"
             android:textSize="@dimen/keyButton_textSize"
             app:backgroundTint="@color/mainBackground"
             app:rippleColor="@android:color/darker_gray" />
@@ -318,7 +318,7 @@
             android:layout_width="@dimen/keyButton_diameter"
             android:layout_height="@dimen/keyButton_diameter"
             android:textAlignment="center"
-            android:textColor="@color/keyButton_text"
+            android:textColor="@color/abstractButton_text"
             android:textSize="@dimen/keyButton_textSize"
             app:backgroundTint="@color/mainBackground"
             app:rippleColor="@android:color/darker_gray" />

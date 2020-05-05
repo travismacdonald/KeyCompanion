@@ -14,8 +14,10 @@
     <dimen name="function_spacing">40dp</dimen>
 
     <!-- Key Buttons -->
-    <dimen name="keyButton_strokeWidth">3dp</dimen>
+    <dimen name="abstractButton_strokeWidth">3dp</dimen>
     <dimen name="keyButton_diameter">72dp</dimen>
     <dimen name="keyButton_textSize">24dp</dimen>
+
+    <dimen name="functionButton_diameter">42dp</dimen>
 
 </resources>

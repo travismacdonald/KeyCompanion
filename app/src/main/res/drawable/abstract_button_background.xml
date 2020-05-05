@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/keyButton_ripple">
+    android:color="@color/abstractButton_ripple">
 
     <item>
         <shape
         android:shape="oval">
 
             <stroke
-                android:width="@dimen/keyButton_strokeWidth"
+                android:width="@dimen/abstractButton_strokeWidth"
                 android:color="@android:color/white" />
 
             <solid android:color="@android:color/transparent" />
